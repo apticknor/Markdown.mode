@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <recognition>
+        <extension>markdown</extension>
+        <extension>mdown</extension>
+        <extension>mkdn</extension>
+        <extension>md</extension>
+        <extension>mkd</extension>
+        <extension>mdwn</extension>
+        <extension>mdtxt</extension>
+        <extension>mdtext</extension>
+        <extension>text</extension>
+    </recognition>
+</settings>
