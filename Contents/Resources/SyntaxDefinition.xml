@@ -6,10 +6,10 @@
         <charsintokens><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@]]></charsintokens>
     </head>
     <states>
-        <default id="Base" color="#000000" inverted-color="#FFFFFF" usespellchecking="yes">
+        <default id="Base" usespellchecking="yes">
             <!-- Headers -->
-            <keywords id="Header" color="#CC0000" inverted-color="#cc66ff" font-weight="bold">
-                <regex>^#{1,6}\s*[^#\r\n]*#{0,6}$</regex>
+            <keywords id="Header" scope="support.header.markdown">
+                <regex>(^#{1,6}\s*[^#\r\n]*#{0,6}$)</regex>
             </keywords>
         </default>
     </states>
