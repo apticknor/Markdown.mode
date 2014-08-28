@@ -1,0 +1,7 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Markdown";
+CFBundleShortVersionString = "1.0";
+CFBundleVersion = "1.0";
+CFBundleGetInfoString = "(c) Anthony Ticknor";
+CFBundleInfoDictionaryVersion = "6.0";
