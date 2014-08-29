@@ -8,8 +8,12 @@
     <states>
         <default id="Base" usespellchecking="yes">
             <!-- Headers -->
-            <keywords id="Header" scope="support.header.markdown">
+            <keywords id="ATX Header" scope="support.header.markdown">
                 <regex>(^#{1,6}\s*[^#\r\n]*#{0,6}$)</regex>
+            </keywords>
+            <keywords id="Setext Header" scope="support.header.markdown">
+                <regex>^[\s\S]*[\r\n](^={3,})</regex>
+                <regex>^[\s\S]*[\r\n](^-{3,})</regex>
             </keywords>
         </default>
     </states>
