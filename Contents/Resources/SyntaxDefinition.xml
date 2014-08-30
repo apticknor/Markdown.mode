@@ -7,14 +7,24 @@
     </head>
     <states>
         <default id="Base" usespellchecking="yes">
+
             <!-- Headers -->
             <keywords id="ATX Header" scope="support.header.markdown">
-                <regex>(^#{1,6}\s*[^#\r\n]*#{0,6}$)</regex>
+                <regex>(^#{1,6}\s*[^#\r\n]*#{0,6}$)</regex> <!-- atx headers with # and optional closing # -->
             </keywords>
             <keywords id="Setext Header" scope="support.header.markdown">
-                <regex>^[\s\S]*[\r\n](^={3,})</regex>
-                <regex>^[\s\S]*[\r\n](^-{3,})</regex>
+                <regex>^[\s\S]*[\r\n](^={3,})</regex> <!-- settext header with multiple equal signs -->
+                <regex>^[\s\S]*[\r\n](^-{3,})</regex> <!-- settext header with multiple dashes -->
             </keywords>
+
+            <!-- Lists -->
+            <keywords id="Lists" scope="keyword.list.markdown">
+                <regex>^\s*(\*)\s{1,4}</regex> <!-- unordered lists with * -->
+                <regex>^\s*(\-)\s{1,4}</regex> <!-- unordered lists with - -->
+                <regex>^\s*(\+)\s{1,4}</regex> <!-- unordered lists with + -->
+                <regex>^\s*(\d\.)\s{1,4}</regex> <!-- ordered lists -->
+            </keywords>
+
         </default>
     </states>
 </syntax>
