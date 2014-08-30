@@ -1,36 +1,45 @@
-# Heading 1 #
+# Standard Headers
 
-text between headings should not highlight
+# ATX Header 1 #
 
-## Heading 2 ##
+## ATX Header 2 ##
 
-### Heading 3 ###
+### ATX Header 3 ###
 
-#### Heading 4 ####
+#### ATX Header 4 ####
 
-##### Heading 5 #####
+##### ATX Header 5 #####
 
-###### Heading 6 ######
+###### ATX Header 6 ######
 
-####### Heading 7+ should not highlight ######
+####### Header 7+ should not highlight ######
+
+# ATX Header 1
+
+## ATX Header 2
+
+### ATX Header 3
+
+#### ATX Header 4
+
+##### ATX Header 5
+
+###### ATX Header 6
+
+####### Header 7+ should not highlight
+
+Settext Header 1
+===========
+
+Settext Header 2
+-----------
+
+# Formatting Edge Cases
 
 # Multline
-Heading should only highlight first line #
+Header should only highlight first line #
 
-# Heading 1
 
-inline # heading # should not highlight
+ # Header with leading space should not highlight #
 
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
- # Heading with leading space should not highlight #
-
-#Heading with no space should highlight
+#Header with no space should highlight
